@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
@@ -10,9 +9,10 @@ body {
 
 .container nav {
     display: flex;
-    font-size: 0.9em;
+    font-size: 1.2em;
     align-items: flex-start;
     font-weight: 500;
+    letter-spacing: 0.1em;
 }
 
 .left-item {
@@ -39,4 +39,22 @@ a {
 
 a:hover {
     opacity: 20%;
+}
+
+/*Hero section styling*/
+#hero-header {
+    display: flex;
+    align-items: center;
+}
+
+.img-container {
+    width: 30%;
+}
+
+img {
+    width: 100%;
+    border-radius: 0.7em;
+}
+
+.text-container {
 }
