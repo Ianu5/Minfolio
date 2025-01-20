@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #f1f4f0;
+    margin: 0px 0px;
+}
+
+.container nav {
+    display: flex;
+    font-size: 0.9em;
+    align-items: flex-start;
+    font-weight: 500;
+}
+
+.left-item {
+    display: flex;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+.container nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 1rem;
+} 
+
+.container nav ul li {
+    padding-right: 1.8rem;
+    align-items: flex-start;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    opacity: 20%;
+}
