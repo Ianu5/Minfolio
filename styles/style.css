@@ -5,6 +5,11 @@
 body {
     background-color: #f1f4f0;
     margin: 0px 0px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container {
 }
 
 .container nav {
@@ -16,9 +21,9 @@ body {
 }
 
 .left-item {
-    display: flex;
     margin-right: auto;
     margin-top: 1rem;
+    padding-left: 1rem;
 }
 
 .container nav ul {
@@ -44,17 +49,79 @@ a:hover {
 /*Hero section styling*/
 #hero-header {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .img-container {
-    width: 30%;
+    flex: 1 1 30%;
+    max-width: 250px;
+    min-width: 150px;
 }
 
-img {
+#hero-header img {
     width: 100%;
     border-radius: 0.7em;
+    object-fit: cover;
 }
 
 .text-container {
+    flex: 1 1 60%;
+    text-align: center;
+    letter-spacing: 0.2em;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    #hero-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-container {
+        flex: 1 1 100%;
+        max-width: 70%;
+    }
+
+    .text-container {
+        flex: 1 1 100%;
+        padding-left: 10%;
+    }
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-container h1 {
+    margin-left: auto;
+    padding-right: 1.8rem;
+    opacity: 80%;
+    text-decoration: underline solid darkgray;
+}
+
+#projects-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 2em
+}
+
+.project-card {
+    width: 30%;
+    border: solid grey;
+    border-radius: 1em;
+    padding: 1em;
+    align-content: center;
+}
+
+.project-container a {
+    margin-left: auto;
+    margin-right: 1.8rem;
+    margin-top: 1.8rem;
+    font-style: italic;
+    font-size: 1.3rem;
 }
