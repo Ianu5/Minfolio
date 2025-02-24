@@ -1,70 +1,61 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./styles/style.css">
-        <title>Jesaja's Portfolio</title>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <h1>A coders journey</h1>
-            </div>
-        </header>
-
-        <nav id="navbar">
-            <div class="container">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./resume.html">Resume</a></li>
-                        <li><a href="./projects.html">Portfolio</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Portfolio Landing Page</title>
+</head>
+<body>
+    <section class="nav">
+        <nav class="navbar container">
+            <ul class="nav__list flex-row">
+                <div class="nav__primary">
+                    <li class="nav__item"><a href="">J.H.</a></li>
+                </div>
+                <div class="nav__secondary flex-row">
+                    <li class="nav__item"><a href="">Projects</a></li>
+                    <li class="nav__item"><a href="">Resume</a></li>
+                </div>
+            </ul>
         </nav>
+    </section>
 
-        <main>
-            <section id="introduction">
-                <div class="container">
-                    <h2>About me</h2>
-                    <p>
-                        Hello my name is Jesaja Hur and I am a self taught developer.
-                        My journey started 2023 with Harvards Online Course "CS50 introduction
-                        to Computer Science" and since then I fell in love with programming.
-                        I always strive to learn and better myself and am always ready for a 
-                        new challenge.
-                    </p>
-                </div>
-                <a href="./contact.html">Contact me</a>
-            </section>
-            
-            <section id="portfolio">
-                <div class="container">
-                    <h2>Some of my coding projects</h2>
-                    <ul>
-                        <li>Habit Tracker <a href="https://github.com/Ianu5/Habit_Tracker">github repo</a></li>
-                        <li>Expense Tracker <a>github repo</a></li>
-                        <li>Collection of small python projects <a>github repo</a></li>
-                        <li>You can see all of my projects <a href="./projects.html">here</a></a></li>
-                    </ul>
-                </div>
-            </section>
-        </main>
+    <header class="hero container flex-col">
+        <div>
+            <h1 class="hero__heading">
+                Jesaja Hur
+            </h1>
+            <h1 class="hero__heading">
+                Frontend
+            </h1>
+            <h1 class="hero__heading">
+                Backend
+            </h1>
+        </div>
 
-        <footer>
-            <div class="container">
-                <ul>
-                    <li>Köln-Hürth</li>
-                    <li>
-                        <a href="mailto:jesajahur@outlook.com" 
-                        title="jesajahur@outlook.com">Contact me per mail!</a>
-                    </li>
-                    <li>Github</li>
-                    <li>LinkedIn</li>
-                </ul>
+        <div class="hero__footer flex-row">
+            <h2 class="footer-heading">
+                Minfolio
+            </h2>
+            <div>
+                <h3 class="footer-subheading">
+                    Contact
+                </h3>
+                <p class="footer-text">
+                    jesajahur@outlook.com
+                </p>
             </div>
-            <p>&copy; 2025 Jesaja Hur. All rights reserved.</p>
-        </footer>
-    </body>
+            <div>
+                <h3 class="footer-subheading">
+                    Copyright
+                </h3>
+                <p class="footer-text">
+                    &copy; 2025 Jesaja Hur<br>All rights reserved.
+                </p>
+            </div>
+        </div>
+    </header>
+
+</body>
 </html>
