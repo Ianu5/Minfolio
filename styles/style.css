@@ -31,9 +31,14 @@ body {
     justify-content: space-between;
 }
 
+li {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
     color: #2e2e2e;
+    transition: 500ms;
 }
 
 a:hover {
@@ -41,17 +46,18 @@ a:hover {
 }
 
 h1 {
-    font-size: 8vw;
+    font-size: 6vw;
     font-weight: 350;
-    line-height: 1.2em;
 }
 
 /*Styling of the sections*/
 
 .nav {
-    padding: 1.5rem 0 3rem 0;
+    padding: 1.5rem 0 1rem 0;
     position: sticky;
     top: 0;
+    background-color: transparent;
+    height: 7vh;
 }
 
 .nav__primary {
@@ -70,12 +76,26 @@ h1 {
 }
 
 .hero {
-    height: 85vh;
+    height: 93vh;
+}
+
+.hero__heading {
+    line-height: 1.7em;
+}
+
+.hero__heading--name {
+    font-size: 8vw;
+    margin-bottom: 2rem;
+}
+
+.hero__container {
+    margin-top: 3rem;
 }
 
 .hero__footer {
     justify-content: space-between;
     gap: 3%;
+    height: 10vh;
 }
 
 .footer-heading {
@@ -92,9 +112,38 @@ h1 {
     font-weight: 300;
 }
 
+.projects {
+    background-color: #2e2e2e;
+    height: 78vh;
+    color: #faf3e0;
+}
+
+.projects__cards {
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+.card {
+    border: solid 2px;
+    width: 30%;
+    padding: 1rem;
+    box-shadow: 2px 2px;
+    opacity: .2;
+    margin-top: 2rem;
+}
+
+.card:hover {
+    opacity: 1;
+    transition: 500ms;
+}
+
 
 @media (min-width: 1200px) {
     .hero__heading {
+        font-size: 4.5rem;
+    }
+
+    .hero__heading--name {
         font-size: 6.07rem;
     }
 }
