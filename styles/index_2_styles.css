@@ -17,16 +17,12 @@ html {
 }
 
 section {
-    height: 100vh;
+    height: 92vh;
     outline: 1px solid;
 }
 
 .flex {
     display: flex;
-}
-
-main {
-    padding-top: 7vh;
 }
 
 .container {
@@ -71,8 +67,7 @@ main {
 .hero {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50vh 30vh;
-    background-color: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.8));
+    grid-template-rows: 30vh 30vh;
 }
 
 .hero__img {
