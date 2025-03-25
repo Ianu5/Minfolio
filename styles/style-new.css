@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Global Variables */
+:root {
+    --primary-bg: #faf3e0;
+    --text-color: #2e2e2e;
+    --font-family: 'Josefin Sans', sans-serif;
+    
+    /* Font Sizes */
+    --font-small: 1rem;
+    --font-medium: 1.6rem;
+    --font-large: 3rem;
+    
+    /* Font Weights */
+    --font-light: 300;
+    --font-regular: 350;
+    --font-bold: 650;
+    
+    /* Spacing */
+    --gap-small: 1rem;
+    --gap-medium: 3rem;
+}
+
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base Styles */
+body {
+    background-color: var(--primary-bg);
+    font-family: var(--font-family);
+    font-size: var(--font-small);
+    color: var(--text-color);
+}
+
+/* Utility Classes */
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: var(--gap-small);
+    min-width: 500px;
+    max-width: 1200px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-large {
+    font-size: var(--font-large);
+    font-weight: var(--font-regular);
+}
+
+.text-medium {
+    font-size: var(--font-medium);
+    font-weight: var(--font-bold);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 500ms;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+/* Navigation */
+.nav {
+    padding: 1.5rem 0 1rem;
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    height: 7vh;
+}
+
+.nav__primary {
+    margin-right: auto;
+}
+
+.nav__secondary {
+    margin-left: 4rem;
+    gap: var(--gap-medium);
+}
+
+.nav__item {
+    list-style: none;
+    font-size: var(--font-medium);
+    font-weight: var(--font-bold);
+}
+
+/* Hero Section */
+.hero {
+    height: 93vh;
+}
+
+.hero__heading {
+    line-height: 1.7;
+    font-size: clamp(2rem, 4vw, 4.5rem);
+    font-weight: var(--font-regular);
+}
+
+.hero__heading--name {
+    font-size: clamp(3rem, 6vw, 6rem);
+    margin-bottom: 2rem;
+}
+
+.hero__container {
+    margin-top: 3rem;
+}
+
+/* Footer */
+.hero__footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+    height: 10vh;
+}
+
+.footer-heading {
+    font-size: var(--font-large);
+    font-weight: var(--font-regular);
+    margin-right: auto;
+}
+
+.footer-subheading,
+.footer-text {
+    font-weight: var(--font-light);
+}

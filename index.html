@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/index_style.css">
     <title>Portfolio Landing Page</title>
 </head>
 <body>
@@ -11,17 +11,17 @@
         <nav class="navbar container">
             <ul class="nav__list flex-row">
                 <div class="nav__primary">
-                    <li class="nav__item"><a href="">J.H.</a></li>
+                    <li class="nav__item"><a href="./index.html">J.H.</a></li>
                 </div>
                 <div class="nav__secondary flex-row">
-                    <li class="nav__item"><a href="#projects">Projects</a></li>
-                    <li class="nav__item"><a href="">Resume</a></li>
+                    <li class="nav__item"><a href="">Projects</a></li>
+                    <li class="nav__item"><a href="./resume.html">Resume</a></li>
                 </div>
             </ul>
         </nav>
     </section>
 
-    <header class="hero container flex-col">
+    <main class="hero container flex-col">
         <div class="hero__container">
             <h1 class="hero__heading hero__heading--name">
                 Jesaja Hur
@@ -33,98 +33,87 @@
                 Backend
             </h1>
         </div>
+    </main>
 
-        <div class="hero__footer flex-row">
-            <h2 class="footer-heading">
-                Minfolio
-            </h2>
-            <div>
-                <h3 class="footer-subheading">
-                    Contact
-                </h3>
-                <p class="footer-text">
-                    jesajahur@outlook.com
-                </p>
-            </div>
-            <div>
-                <h3 class="footer-subheading">
-                    Copyright
-                </h3>
-                <p class="footer-text">
-                    &copy; 2025 Jesaja Hur<br>All rights reserved.
-                </p>
-            </div>
+    <footer class="footer container flex-row">
+        <h2 class="footer-heading">
+            Minfolio
+        </h2>
+        <div>
+            <h3 class="footer-subheading">
+                Contact
+            </h3>
+            <p class="footer-text">
+                jesajahur@outlook.com
+            </p>
         </div>
-    </header>
+        <div>
+            <h3 class="footer-subheading">
+                Copyright
+            </h3>
+            <p class="footer-text">
+                &copy; 2025 Jesaja Hur<br>All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
 
-    <section class="projects" id="projects">
+
+    <!--
+     <section class="projects" id="projects">
         <div class="container">
             <h1 class="projects__title">
                 Projects
             </h1>
-            <div class="projects__cards flex-row">
+            <div class="projects__cards">
                 <div class="card">
-                    <h2 class="projects__heading">
+                    <h2 class="card__heading">
                         Habit Tracker
                     </h2>
-                    <p class="projects__text">
+                    <p class="card__text hidden">
                         My first project after completing CS50 Introduction to Computer Science
                     </p>
-                    <h3 class="projects__subheading">
+                    <h3 class="card__subheading hidden">
                         Technologies used
                     </h3>
-                    <ul>
+                    <ul class="card__list hidden">
                         <li>Python</li>
                         <li>Flask Framework</li>
                         <li>Bootstrap Framework</li>
                         <li>SQLite for Storing Data locally</li>
                     </ul>
+                    <a class="card__link" href="">github</a>
                 </div>
                 <div class="card">
-                    <h2 class="projects__heading">
+                    <h2 class="card__heading">
                         Expense Tracker
                     </h2>
-                    <p class="projects__text">
+                    <p class="card__text hidden">
                         Python Command Line Program for tracking expenses
                     </p>
-                    <h3 class="projects__subheading">
+                    <h3 class="card__subheading hidden">
                         Technologies used
                     </h3>
-                    <ul>
+                    <ul class="card__list hidden">
                         <li>Python</li>
                     </ul>
                 </div>
                 <div class="card">
-                    <h2 class="projects__heading">
-                        Expense Tracker
+                    <h2 class="card__heading">
+                        Frontend Mentor QR-code challenge
                     </h2>
-                    <p class="projects__text">
+                    <p class="card__text hidden">
                         Python Command Line Program for tracking expenses
                     </p>
-                    <h3 class="projects__subheading">
+                    <h3 class="card__subheading hidden">
                         Technologies used
                     </h3>
-                    <ul>
-                        <li>Python</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h2 class="projects__heading">
-                        Expense Tracker
-                    </h2>
-                    <p class="projects__text">
-                        Python Command Line Program for tracking expenses
-                    </p>
-                    <h3 class="projects__subheading">
-                        Technologies used
-                    </h3>
-                    <ul>
+                    <ul class="card__list hidden">
                         <li>Python</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-
-</body>
-</html>
+    -->

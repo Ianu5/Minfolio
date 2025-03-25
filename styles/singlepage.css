@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --primary-color: #faf3e0;
+    --secondary--color: #2e2e2e;
+
+
+    --font-family: 'Josefin Sans', sans-serif;
+    --font-size-lg: 3rem;
+    --font-size-md: 2rem;
+    --font-size-nm: 1.6rem;
+}
+
+
+/*Reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+}
+a {
+    text-decoration: none;
+}
+
+/*Utilities*/
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    padding-block-start: 10vh;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    min-width: 500px;
+    max-width: 1200px;
+}
+
+.section:nth-child(even) {
+    background-color: var(--primary-color);
+}
+
+.section:nth-child(odd) {
+    background-color: var(--secondary--color);
+}
+
+/*Nav styling*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: var(--font-size-nm);
+    padding-block-start: 2rem;
+    font-weight: 650;
+    opacity: .8;
+}
+
+.container--nav {
+    justify-content: space-between;
+}
+
+.navbar__links {
+    gap: 2rem;
+}
+
+.navbar__link {
+    color: var(--secondary--color);
+    transition: opacity .3s;
+}
+
+.navbar__link:hover {
+    opacity: .3;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*section specific styling*/
